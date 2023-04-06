@@ -1,0 +1,36 @@
+.footer {
+  margin: 0;
+  padding: 50px 91px 50px 103px;
+  background-color: $color-tangaroa;
+
+  @media screen and (max-width: 1074px) {
+    padding: 50px 70px 50px 103px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    padding: 47px 36px 44px 45px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 40px 15px 33px;
+  }
+}
+
+.footer__wrapper {
+  max-width: 1172px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.footer__wrapper-index {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,72 @@
+.journey {
+  margin: 0;
+  padding: 115px 103px 145px;
+
+  @media screen and (max-width: 1023px) {
+    padding: 91px 45px 92px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 58px 15px 85px;
+  }
+}
+
+.journey__wrapper {
+  max-width: 1160px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+
+  @media screen and (max-width: 1023px) {
+    gap: 30px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.journey__title {
+  margin: 56px 0 24px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  color: $color-tangaroa;
+
+  @media screen and (max-width: 1023px) {
+    margin: 0 0 15px;
+    max-width: 225px;
+    font-size: 26px;
+    line-height: 140%;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 200px;
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+}
+
+.journey__wrapper-next p {
+  margin: 0;
+  padding: 0;
+  max-width: 512px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: $color-tangaroa;
+}
+
+.journey__img {
+  object-fit: cover;
+
+  @media screen and (max-width: 1023px) {
+    margin-top: 9px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 13px;
+  }
+}

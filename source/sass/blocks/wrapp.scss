@@ -1,0 +1,16 @@
+.wrapp__container {
+  min-height: 655px;
+  background: $color-jordy-blue;
+  background-image: url(../img/menu-background-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (max-width: 1023px) {
+    min-height: 638px;
+    background-image: url(../img/menu-background-tablet.jpg);
+  }
+
+  @media screen and (max-width: 767px) {
+    min-height: 500px;
+  }
+}

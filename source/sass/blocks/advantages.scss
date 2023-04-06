@@ -1,0 +1,155 @@
+.advantages {
+  background-image: url(../img/background-advantages-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.advantages__wrapper {
+  padding: 110px 103px 120px;
+  max-width: 1366px;
+  margin: auto;
+
+  @media screen and (max-width: 1023px) {
+    padding: 91px 45px 100px;
+  }
+
+  @media screen and (max-width: 767px){
+    padding: 56px 15px 66px;
+  }
+
+}
+
+.advantages__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  color: $color-tangaroa;
+  text-align: center;
+
+  @media screen and (max-width: 1023px) {
+    font-size: 26px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+  }
+}
+
+.advantages__list {
+  margin: 49px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+
+  @media screen and (max-width: 1023px) {
+    gap: 30px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+}
+
+.advantages__item {
+  padding: 30px 33px 46px 30px;
+  max-width: 360px;
+  list-style-type: none;
+  background-color: $color-alice-blue;
+
+  @media screen and (max-width: 1023px) {
+    padding: 26px 16px 21px 20px;
+    max-width: 206px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 25px 22px 20px 20px;
+    max-width: 100%;
+  }
+}
+
+.advantages__item-title {
+  margin: 13px 0 8px;
+  padding: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: $color-tangaroa;
+
+  @media screen and (max-width: 1023px) {
+    margin: 13px 0 10px;
+    line-height: 140%;
+  }
+
+  @media screen and (max-width: 320px) {
+    max-width: 200px;
+  }
+}
+
+.advantages__item-title--all-inclusive br {
+  display: none;
+
+  @media screen and (max-width: 1023px) {
+    display: block;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 320px) {
+    display: block;
+  }
+}
+
+.advantages__item p {
+  margin: 0;
+  padding: 0;
+  max-width: 290px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+
+  @media screen and (max-width: 767px) {
+    max-width: 100%;
+  }
+}
+
+.advantages__item--all-inclusive p {
+  max-width: 285px;
+}
+
+@media screen and (max-width: 1023px) {
+  .advantages__icon--liner {
+    width: 21px;
+    height: 26px;
+  }
+
+  .advantages__icon--all-inclusive {
+    width: 27px;
+    height: 26px;
+  }
+
+  .advantages__icon--zodiac {
+    width: 36px;
+    height: 26px;
+  }
+
+  .advantages__item-title--zodiac {
+    margin-bottom: 20px;
+  }
+
+  .advantages__item--zodiac {
+    padding: 26px 18px 21px 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advantages__item-title--zodiac {
+    margin-bottom: 10px;
+  }
+}
