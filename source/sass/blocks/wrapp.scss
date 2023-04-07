@@ -1,16 +1,74 @@
 .wrapp__container {
   min-height: 655px;
   background: $color-jordy-blue;
-  background-image: url(../img/menu-background-desktop.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+
+  @supports (background-image: url("../img/menu-background-desktop.webp")) {
+    background-image: url("../img/menu-background-desktop.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/menu-background-desktop@2x.webp");
+    }
+  }
+
+  @supports not (background-image: url("../img/menu-background-desktop.webp")) {
+    background-image: url("../img/menu-background-desktop.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/menu-background-desktop@2x.jpg");
+    }
+  }
+
 
   @media screen and (max-width: 1023px) {
     min-height: 638px;
-    background-image: url(../img/menu-background-tablet.jpg);
+
+    @supports (background-image: url("../img/menu-background-tablet.webp")) {
+      background-image: url("../img/menu-background-tablet.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/menu-background-tablet@2x.webp");
+      }
+    }
+
+    @supports not (background-image: url("../img/menu-background-tablet.webp")) {
+      background-image: url("../img/menu-background-tablet.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/menu-background-tablet@2x.jpg");
+      }
+    }
   }
 
   @media screen and (max-width: 767px) {
     min-height: 500px;
+  }
+
+  @media screen and (max-width: 374px) {
+    min-height: 500px;
+
+    @supports (background-image: url("../img/menu-background-mobile.webp")) {
+      background-image: url("../img/menu-background-mobile.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/menu-background-mobile@2x.webp");
+      }
+    }
+
+    @supports not (background-image: url("../img/menu-background-mobile.webp")) {
+      background-image: url("../img/menu-background-mobile.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/menu-background-mobile@2x.jpg");
+      }
+    }
   }
 }

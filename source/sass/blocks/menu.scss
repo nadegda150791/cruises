@@ -1,6 +1,7 @@
 .menu {
   margin: 0;
   padding: 8px 0;
+  max-width: 700px;
 
   @media screen and (max-width: 1023px) {
     padding: 0;

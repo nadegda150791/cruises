@@ -1,7 +1,64 @@
 .advantages {
-  background-image: url(../img/background-advantages-desktop.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  min-height: 562px;
+
+  @supports (background-image: url("../img/background-advantages-desktop.webp")) {
+    background-image: url("../img/background-advantages-desktop.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/background-advantages-desktop@2x.webp");
+    }
+  }
+
+  @supports not (background-image: url("../img/background-advantages-desktop.webp")) {
+    background-image: url("../img/background-advantages-desktop.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/background-advantages-desktop@2x.jpg");
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    min-height: 588px;
+
+    @supports (background-image: url("../img/background-advantages-tablet.webp")) {
+      background-image: url("../img/background-advantages-tablet.webp");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/background-advantages-tablet@2x.webp");
+      }
+    }
+
+    @supports not (background-image: url("../img/background-advantages-tablet.webp")) {
+      background-image: url("../img/background-advantages-tablet.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/background-advantages-tablet@2x.jpg");
+      }
+    }
+  }
+
+  @media screen and (max-width: 374px) {
+    min-height: 997px;
+
+    @supports (background-image: url("../img/background-advantages-mobile.webp")) {
+      background-image: url("../img/background-advantages-mobile.webp");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/background-advantages-mobile@2x.webp");
+      }
+    }
+
+    @supports not (background-image: url("../img/background-advantages-mobile.webp")) {
+      background-image: url("../img/background-advantages-mobile.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/background-advantages-mobile@2x.jpg");
+      }
+    }
+  }
 }
 
 .advantages__wrapper {
@@ -13,10 +70,9 @@
     padding: 91px 45px 100px;
   }
 
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
     padding: 56px 15px 66px;
   }
-
 }
 
 .advantages__title {

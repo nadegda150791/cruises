@@ -1,0 +1,144 @@
+.contacts {
+  padding: 120px 103px 113px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  max-width: 1366px;
+  margin: auto;
+
+  @media screen and (max-width: 1140px) {
+    gap: 80px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    max-width: 100%;
+    padding: 100px 45px 93px;
+    gap: 30px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    padding: 65px 15px 60px;
+    position: relative;
+    min-height: 703px;
+  }
+}
+
+.contacts__wrapper {
+  position: relative;
+
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 320px;
+    left: 0;
+  }
+}
+
+.contacts__map {
+  border: none;
+  max-width: 560px;
+  min-height: 100%;
+
+  @media screen and (max-width: 1023px) {
+    min-height: 335px;
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 0 15px;
+    min-height: 316px;
+    max-width: 100%;
+  }
+}
+
+.contacts__map-pin {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+}
+
+.contacts__wrapper-next {
+  padding: 75px 0 0;
+
+  @media screen and (max-width: 1023px) {
+    padding-top: 67px;
+  }
+
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+  }
+}
+
+.contacts__info {
+  margin: 0 0 32px;
+  padding: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: $color-tangaroa;
+
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 26px;
+  }
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__item {
+  position: relative;
+  margin-bottom: 21px;
+  list-style-type: none;
+}
+
+.contacts__link {
+  margin-left: 28px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: $color-tangaroa;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.contacts__text {
+  margin: -24px 0 0 190px;
+
+  @media screen and (max-width: 1310px) {
+    margin: 0 0 0 27px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    margin: 0 0 0 27px;
+  }
+}
+
+.contacts__link br {
+  display: none;
+
+  @media screen and (max-width: 1023px) {
+    display: block;
+  }
+}
+
+.contacts__icon {
+  position: absolute;
+  top: 1px;
+  left: 0;
+
+  @media screen and (max-width: 1023px) {
+    top: 4px;
+  }
+}
