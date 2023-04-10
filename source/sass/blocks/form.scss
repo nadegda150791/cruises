@@ -49,7 +49,7 @@
   }
 
   @media screen and (max-width: 374px) {
-    padding: 60px 15px 65px;
+    padding: 58px 15px 65px;
 
     @supports (background-image: url("../img/form-background-mobile.webp")) {
       background-image: url("../img/form-background-mobile.webp");
@@ -112,7 +112,7 @@
   @media screen and (max-width: 320px) {
     max-width: 200px;
     margin: auto;
-    margin-bottom: 12px;
+    margin-bottom: 13px;
   }
 }
 
