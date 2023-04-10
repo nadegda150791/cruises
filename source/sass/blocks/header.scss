@@ -1,5 +1,5 @@
 .header__icon {
-  fill: #ffffff;
+  fill: $color-alice-blue;
 
   @media screen and (max-width: 1023px) {
     width: 38px;
@@ -49,6 +49,14 @@
     box-shadow: 0 7px 7px -7px rgba(0, 0, 0, 0.25);
     cursor: pointer;
 
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
     @media (max-width: 1023px) {
       box-shadow: none;
     }
@@ -59,7 +67,8 @@
       margin-left: 13%;
 
       .header__icon {
-        fill: #000000;
+        fill: $color-tangaroa;
+        transition: 0.25s;
       }
     }
   }
@@ -145,6 +154,14 @@
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     cursor: pointer;
 
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
     @media screen and (max-width: 1023px) {
       text-shadow: none;
       font-size: 14px;
@@ -211,7 +228,16 @@
   }
 
   &__burger-text {
+    cursor: pointer;
     margin-top: -8px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
 
     .is-open & {
       opacity: 0;
@@ -229,6 +255,14 @@
     top: 4px;
     transform: translateY(-50%);
     cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
 
     .is-open & {
       opacity: 1;

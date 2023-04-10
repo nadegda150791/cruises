@@ -234,6 +234,10 @@
   }
 }
 
+.form__custom-toggle--checkbox input {
+  visibility: hidden;
+}
+
 .form__mark {
   position: absolute;
   width: 18px;

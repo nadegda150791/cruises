@@ -85,7 +85,7 @@
   }
 }
 
-.cruises-container {
+.cruises__container {
   min-height: 386px;
   min-width: 260px;
   position: absolute;
@@ -105,12 +105,12 @@
   }
 }
 
-.cruises-container__list {
+.cruises__container-list {
   margin: 0;
   padding: 0;
 }
 
-.cruises-container__title {
+.cruises__container-title {
   padding: 0;
   margin: 0;
   font-weight: 500;
@@ -131,7 +131,7 @@
   }
 }
 
-.cruises-container__description {
+.cruises__container-description {
   margin: 1px 0 12px 0;
   padding: 0;
   font-weight: 400;
@@ -196,7 +196,7 @@
   }
 }
 
-.cruises__item:hover .cruises-container {
+.cruises__item:hover .cruises__container {
   display: block;
 }
 

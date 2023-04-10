@@ -1,4 +1,4 @@
-import './locomotive-scroll';
+import '../../vendor/locomotive-scroll';
 import {Burger} from './burger';
 import {StickyHeader} from './sticky-header';
 import {initLocomotiveScroll} from './init-locomotive-scroll';
