@@ -173,26 +173,6 @@
       line-height: 22px;
       color: $color-tangaroa;
     }
-
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        &:not(span) {
-          color: #2c39f2;
-        }
-      }
-    }
-
-    &--blue {
-      color: #2c39f2;
-
-      @media (hover: hover) {
-        &:hover:not(.focus-visible) {
-          &:not(span) {
-            color: #ff1553;
-          }
-        }
-      }
-    }
   }
 
   &__burger {

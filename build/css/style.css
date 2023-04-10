@@ -1531,10 +1531,6 @@ button,
   opacity: 0.3;
 }
 
-.header__link--blue {
-  color: #2c39f2;
-}
-
 .header__burger {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3107,13 +3103,5 @@ button,
 
   .custom-select__item:hover:not(.focus-visible) {
     background-color: rgba(0, 0, 0, 0.4);
-  }
-
-  .header__link:hover:not(.focus-visible):not(span) {
-    color: #2c39f2;
-  }
-
-  .header__link--blue:hover:not(.focus-visible):not(span) {
-    color: #ff1553;
   }
 }
