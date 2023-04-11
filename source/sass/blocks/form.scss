@@ -206,7 +206,7 @@
   border: none;
   color: rgba(1, 28, 64, 0.7);
   background-color: $color-alice-blue;
-  cursor: pointer;
+  cursor: text;
 
   &:hover {
     opacity: 0.6;
@@ -287,11 +287,11 @@
   }
 
   @media screen and (max-width: 1023px) {
-    margin-top: 3px;
+    margin: 3px 0 0 11px;
   }
 
   @media screen and (max-width: 767px) {
-    margin: -3px 0 0 28px;
+    margin: -3px 0 0 15px;
     text-align: start;
   }
 
