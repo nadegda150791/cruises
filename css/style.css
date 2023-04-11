@@ -1303,6 +1303,10 @@ button,
   opacity: 0.3;
 }
 
+.logo-footer__icon {
+  fill: #f9fbfd;
+}
+
 .journey {
   margin: 0;
   padding: 115px 103px 145px;
@@ -1912,7 +1916,7 @@ button,
   border: none;
   color: rgba(1, 28, 64, 0.7);
   background-color: #f9fbfd;
-  cursor: pointer;
+  cursor: text;
 }
 
 .form__custom-input input:hover {
@@ -2542,7 +2546,7 @@ button,
   }
 
   .form__label-checkbox {
-    margin-top: 3px;
+    margin: 3px 0 0 11px;
   }
 
   .contacts {
@@ -2933,7 +2937,7 @@ button,
   }
 
   .form__label-checkbox {
-    margin: -3px 0 0 28px;
+    margin: -3px 0 0 15px;
     text-align: start;
   }
 
