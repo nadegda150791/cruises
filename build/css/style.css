@@ -1736,6 +1736,7 @@ button,
 .cruises__item {
   position: relative;
   list-style-type: none;
+  background: #011c40;
 }
 
 .cruises__heading {
