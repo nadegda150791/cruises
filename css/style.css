@@ -1758,7 +1758,6 @@ button,
   position: relative;
   list-style-type: none;
   background: #011c40;
-  cursor: pointer;
 }
 
 .cruises__heading,
@@ -1780,10 +1779,16 @@ button,
   top: 0;
   background: #011c40;
   padding: 28px 25px 25px;
-  display: none;
   z-index: 1;
   overflow-y: scroll;
-  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.cruises__item:hover .cruises__container,
+.cruises__item:focus-within .cruises__container {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .cruises__container-heading {
@@ -1838,11 +1843,8 @@ button,
   opacity: 0.3;
 }
 
-.cruises__item:hover .cruises__container,
-.cruises__item:focus-visible .cruises__container {
-  display: block;
-  height: 386px;
-  cursor: pointer;
+.cruises__toggle:focus {
+  opacity: 0.9;
 }
 
 .form {
