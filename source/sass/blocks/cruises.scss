@@ -84,7 +84,6 @@
   position: relative;
   list-style-type: none;
   background: $color-tangaroa;
-  cursor: pointer;
 }
 
 .cruises__heading,
@@ -119,10 +118,10 @@
   top: 0;
   background: $color-tangaroa;
   padding: 28px 25px 25px;
-  display: none;
   z-index: 1;
   overflow-y: scroll;
-  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
 
   @media screen and (max-width: 1023px) {
     min-width: 100%;
@@ -132,6 +131,12 @@
   @media screen and (max-width: 767px) {
     padding: 28px 25px 35px;
   }
+}
+
+.cruises__item:hover .cruises__container,
+.cruises__item:focus-within .cruises__container {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .cruises__container-heading {
@@ -221,6 +226,10 @@
     opacity: 0.3;
   }
 
+  &:focus {
+    opacity: 0.9;
+  }
+
   @media screen and (max-width: 1023px) {
     min-width: 77%;
   }
@@ -236,11 +245,4 @@
   @media screen and (max-width: 320px) {
     min-width: 81%;
   }
-}
-
-.cruises__item:hover .cruises__container,
-.cruises__item:focus-visible .cruises__container  {
-  display: block;
-  height: 386px;
-  cursor: pointer;
 }
