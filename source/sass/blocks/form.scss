@@ -151,9 +151,9 @@
 .form__wrapper-index {
   margin-left: 20px;
   max-width: 403px;
-  min-height: 455px;
+  max-height: 600px;
   background-color: $color-tangaroa;
-  padding: 44px 49px 48px;
+  padding: 44px 49px 50px;
 
   @media screen and (max-width: 1023px) {
     max-width: 100%;
@@ -162,6 +162,7 @@
   }
 
   @media screen and (max-width: 767px) {
+    max-height: 100%;
     margin: 0;
     padding: 36px 30px 26px;
   }
@@ -185,7 +186,8 @@
 }
 
 .form__container {
-  margin-top: 28px;
+  position: relative;
+  margin-top: 7px;
 
   @media screen and (max-width: 1023px) {
     margin-bottom: 20px;
@@ -197,7 +199,7 @@
 }
 
 .form__custom-input input {
-  margin: 0 0 21px;
+  margin: 21px 0 0;
   padding: 12px 16px 9px;
   width: 100%;
   font-weight: 400;
@@ -206,7 +208,7 @@
   border: none;
   color: rgba(1, 28, 64, 0.7);
   background-color: $color-alice-blue;
-  cursor: text;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.6;
@@ -214,16 +216,13 @@
 
   &:active {
     opacity: 0.3;
-  }
-
-  @media screen and (max-width: 1023px) {
-    margin-bottom: 21px;
   }
 }
 
 .form__custom-toggle label {
   display: flex;
   position: relative;
+  margin-top: 21px;
 
   &:hover {
     opacity: 0.6;
@@ -232,10 +231,6 @@
   &:active {
     opacity: 0.3;
   }
-}
-
-.form__custom-toggle--checkbox input {
-  visibility: hidden;
 }
 
 .form__mark {
@@ -260,14 +255,6 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .form__label-checkbox {
@@ -278,20 +265,12 @@
   color: $color-alice-blue;
   cursor: pointer;
 
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
   @media screen and (max-width: 1023px) {
-    margin: 3px 0 0 11px;
+    margin: 3px 0 0 24px;
   }
 
   @media screen and (max-width: 767px) {
-    margin: -3px 0 0 15px;
+    margin: -3px 0 0 28px;
     text-align: start;
   }
 
@@ -327,10 +306,26 @@
 }
 
 .form__custom-toggle input:focus + .form__mark {
-  outline: 2px solid;
+  visibility: visible;
+  outline: 3px solid;
   order: 10;
 }
 
 .form__label-checkbox:focus {
   outline: 2px solid;
+}
+
+.form__custom-input .is-invalid,
+.form__custom-input .is-valid {
+  position: absolute;
+  left: 0;
+  margin-top: 70px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1px;
+  color: $color-torch-red;
+}
+
+.form__custom-input .is-valid {
+  color: $color-alice-blue;
 }
