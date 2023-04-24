@@ -1733,6 +1733,7 @@ button,
   -o-object-fit: cover;
   object-fit: cover;
   height: 386px;
+  width: 260px;
 }
 
 .cruises__title {
@@ -1758,6 +1759,7 @@ button,
   position: relative;
   list-style-type: none;
   background: #011c40;
+  width: 260px;
 }
 
 .cruises__heading,
@@ -2021,10 +2023,14 @@ button,
 
 .form__custom-toggle input:focus + .form__mark {
   visibility: visible;
-  outline: 3px solid;
+  outline: 3px solid #6fa8dc;
   -webkit-box-ordinal-group: 11;
   -ms-flex-order: 10;
   order: 10;
+}
+
+.form__custom-toggle label {
+  cursor: pointer;
 }
 
 .form__label-checkbox:focus {
@@ -2032,6 +2038,7 @@ button,
 }
 
 .form__custom-input .is-invalid,
+.form__custom-toggle .is-invalid,
 .form__custom-input .is-valid {
   position: absolute;
   left: 0;
@@ -2040,6 +2047,10 @@ button,
   font-size: 10px;
   line-height: 1px;
   color: #ff1553;
+}
+
+.form__custom-toggle .is-invalid {
+  margin-top: 10px;
 }
 
 .form__custom-input .is-valid {
@@ -2228,13 +2239,12 @@ button,
 
 @media screen and (max-width: 1190px) {
   .cruises {
-    padding: 85px 30px 120px;
+    padding: 85px 118px 120px;
   }
-}
 
-@media screen and (max-width: 1160px) {
-  .cruises {
-    padding: 85px 15px 120px;
+  .cruises__list {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -2251,12 +2261,6 @@ button,
 
   .cruises__container-description {
     font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .cruises {
-    padding: 85px 5px 120px;
   }
 }
 
@@ -2501,6 +2505,11 @@ button,
   .cruises__list {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .cruises__item {
+    width: 309px;
+    margin: auto;
   }
 
   .cruises__heading,
@@ -2934,6 +2943,10 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .cruises__item {
+    width: 270px;
   }
 
   .cruises__heading,
