@@ -3,34 +3,6 @@
   max-width: 1366px;
   margin: auto;
 
-  @media screen and (max-width: 1315px) {
-    padding: 85px 95px 120px;
-  }
-
-  @media screen and (max-width: 1270px) {
-    padding: 85px 75px 120px;
-  }
-
-  @media screen and (max-width: 1220px) {
-    padding: 85px 45px 120px;
-  }
-
-  // @media screen and (max-width: 1190px) {
-  //   padding: 85px 30px 120px;
-  // }
-
-  // @media screen and (max-width: 1160px) {
-  //   padding: 85px 15px 120px;
-  // }
-
-  // @media screen and (max-width: 1100px) {
-  //   padding: 85px 5px 120px;
-  // }
-
-  @media screen and (max-width: 1190px) {
-    padding: 85px 118px 120px;
-  }
-
   @media screen and (max-width: 1023px) {
     padding: 90px 60px 100px;
   }
@@ -42,12 +14,11 @@
 
 .cruises__img {
   object-fit: cover;
-  height: 386px;
-  width: 260px;
-
-  @media screen and (max-width: 1023px) {
-    width: 100%;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .cruises__title {
@@ -75,25 +46,8 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 30px;
 
-  // @media screen and (max-width: 1160px) {
-  //   gap: 20px;
-  // }
-
-  // @media screen and (max-width: 1110px) {
-  //   gap: 10px;
-  // }
-
-  // @media screen and (max-width: 1090px) {
-  //   grid-template-columns: 1fr 1fr 1fr;
-  // }
-
-  @media screen and (max-width: 1190px) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
   @media screen and (max-width: 1023px) {
     grid-template-columns: 1fr 1fr;
-    // gap: 30px;
   }
 
   @media screen and (max-width: 767px) {
@@ -106,27 +60,25 @@
   position: relative;
   list-style-type: none;
   background: $color-tangaroa;
-  width: 260px;
+  padding-top: calc(386 * 100% / 260);
+  color: $color-alice-blue;
 
   @media screen and (max-width: 1023px) {
-    width: 309px;
-    margin: auto;
+    padding-top: calc(386 * 100% / 309);
   }
 
   @media screen and (max-width: 767px) {
-   width: 270px;
+    padding-top: calc(386 * 100% / 270);
   }
 }
 
-.cruises__heading,
-.cruises__container-heading {
+.cruises__heading {
   position: absolute;
   margin: 30px 30px 22px;
   bottom: 0;
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  color: $color-alice-blue;
 
   @media screen and (max-width: 1276px) {
     font-size: 17px;
@@ -143,25 +95,26 @@
 }
 
 .cruises__container {
-  height: 386px;
-  min-width: 260px;
+  height: 100%;
+  width: 100%;
   position: absolute;
   left: 0;
   top: 0;
-  background: $color-tangaroa;
-  padding: 28px 25px 25px;
+  padding: 70px 25px 25px;
   z-index: 1;
-  overflow-y: scroll;
   opacity: 0;
   pointer-events: none;
 
+  @media screen and (max-width: 1139px) {
+    padding-top: 80px;
+  }
+
   @media screen and (max-width: 1023px) {
-    min-width: 100%;
-    padding: 28px 35px 35px;
+    padding: 70px 35px 35px;
   }
 
   @media screen and (max-width: 767px) {
-    padding: 28px 25px 35px;
+    padding: 70px 25px 35px;
   }
 }
 
@@ -171,23 +124,60 @@
   pointer-events: all;
 }
 
-.cruises__container-heading {
-  position: relative;
-  margin: 0 0 15px;
-  padding: 0;
+.cruises__item:hover .cruises__img {
+  display: none;
+}
+
+.cruises__item:hover .cruises__heading {
+  top: 0;
+  margin: 28px 25px 22px;
 
   @media screen and (max-width: 1023px) {
-    margin: 0 0 15px;
+    margin: 28px 35px 22px;
   }
 
-  @media screen and (max-width: 767px) {
-    margin: 0 0 15px;
+  @media screen and (max-width: 767px)  {
+    margin: 28px 25px 22px;
   }
 }
 
 .cruises__container-list {
   margin: 0;
   padding: 0;
+  height: 74%;
+  overflow-y: scroll;
+
+  @media screen and (max-width: 1023px) {
+    height: 85%;
+  }
+
+  @media screen and (max-width: 960px) {
+    height: 83%;
+  }
+
+  @media screen and (max-width: 800px) {
+    height: 77%;
+  }
+
+  @media screen and (max-width: 767px) {
+    height: 91%;
+  }
+
+  @media screen and (max-width: 590px) {
+    height: 86%;
+  }
+
+  @media screen and (max-width: 430px) {
+    height: 83%;
+  }
+
+  @media screen and (max-width: 370px) {
+    height: 80%;
+  }
+
+  @media screen and (max-width: 320px) {
+    height: 77%;
+  }
 }
 
 .cruises__container-title {
@@ -196,7 +186,6 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 140%;
-  color: $color-alice-blue;
 
   @media screen and (max-width: 1268px) {
     font-size: 13px;
@@ -262,7 +251,12 @@
     opacity: 0.9;
   }
 
+  @media screen and (max-width: 1139px) {
+    font-size: 11px;
+  }
+
   @media screen and (max-width: 1023px) {
+    font-size: 14px;
     min-width: 77%;
   }
 
