@@ -307,8 +307,12 @@
 
 .form__custom-toggle input:focus + .form__mark {
   visibility: visible;
-  outline: 3px solid;
+  outline: 3px solid $color-jordy-blue;
   order: 10;
+}
+
+.form__custom-toggle label {
+  cursor: pointer;
 }
 
 .form__label-checkbox:focus {
@@ -316,6 +320,7 @@
 }
 
 .form__custom-input .is-invalid,
+.form__custom-toggle .is-invalid,
 .form__custom-input .is-valid {
   position: absolute;
   left: 0;
@@ -324,6 +329,10 @@
   font-size: 10px;
   line-height: 1px;
   color: $color-torch-red;
+}
+
+.form__custom-toggle .is-invalid{
+  margin-top: 10px;
 }
 
 .form__custom-input .is-valid {

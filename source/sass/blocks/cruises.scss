@@ -15,16 +15,20 @@
     padding: 85px 45px 120px;
   }
 
+  // @media screen and (max-width: 1190px) {
+  //   padding: 85px 30px 120px;
+  // }
+
+  // @media screen and (max-width: 1160px) {
+  //   padding: 85px 15px 120px;
+  // }
+
+  // @media screen and (max-width: 1100px) {
+  //   padding: 85px 5px 120px;
+  // }
+
   @media screen and (max-width: 1190px) {
-    padding: 85px 30px 120px;
-  }
-
-  @media screen and (max-width: 1160px) {
-    padding: 85px 15px 120px;
-  }
-
-  @media screen and (max-width: 1100px) {
-    padding: 85px 5px 120px;
+    padding: 85px 118px 120px;
   }
 
   @media screen and (max-width: 1023px) {
@@ -39,6 +43,7 @@
 .cruises__img {
   object-fit: cover;
   height: 386px;
+  width: 260px;
 
   @media screen and (max-width: 1023px) {
     width: 100%;
@@ -70,8 +75,25 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 30px;
 
+  // @media screen and (max-width: 1160px) {
+  //   gap: 20px;
+  // }
+
+  // @media screen and (max-width: 1110px) {
+  //   gap: 10px;
+  // }
+
+  // @media screen and (max-width: 1090px) {
+  //   grid-template-columns: 1fr 1fr 1fr;
+  // }
+
+  @media screen and (max-width: 1190px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   @media screen and (max-width: 1023px) {
     grid-template-columns: 1fr 1fr;
+    // gap: 30px;
   }
 
   @media screen and (max-width: 767px) {
@@ -84,6 +106,16 @@
   position: relative;
   list-style-type: none;
   background: $color-tangaroa;
+  width: 260px;
+
+  @media screen and (max-width: 1023px) {
+    width: 309px;
+    margin: auto;
+  }
+
+  @media screen and (max-width: 767px) {
+   width: 270px;
+  }
 }
 
 .cruises__heading,
