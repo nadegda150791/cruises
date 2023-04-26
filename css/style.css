@@ -1791,15 +1791,18 @@ button,
 .cruises__item:focus-within .cruises__container {
   opacity: 1;
   pointer-events: all;
+  background: #011c40;
 }
 
 .cruises__item:hover .cruises__img {
   display: none;
 }
 
-.cruises__item:hover .cruises__heading {
+.cruises__item:hover .cruises__heading,
+.cruises__item:focus-within .cruises__heading {
   top: 0;
   margin: 28px 25px 22px;
+  z-index: 10;
 }
 
 .cruises__container-list {
@@ -2500,7 +2503,8 @@ button,
     padding: 70px 35px 35px;
   }
 
-  .cruises__item:hover .cruises__heading {
+  .cruises__item:hover .cruises__heading,
+  .cruises__item:focus-within .cruises__heading {
     margin: 28px 35px 22px;
   }
 
@@ -2951,7 +2955,8 @@ button,
     padding: 70px 25px 35px;
   }
 
-  .cruises__item:hover .cruises__heading {
+  .cruises__item:hover .cruises__heading,
+  .cruises__item:focus-within .cruises__heading {
     margin: 28px 25px 22px;
   }
 
